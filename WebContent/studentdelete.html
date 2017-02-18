@@ -1,0 +1,31 @@
+
+<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Student Deletion</title>
+</head>
+<body>
+<form action="./StudentUpdationServlet" method="post" onsubmit="return validate();">
+<label for = "student">STUDENTID: 
+	</label><input type = "text" name="StudentID" id="text1" placeholder="enter student ID" >
+	<br><br>
+	<label for="delete"></label>
+   <input type="submit" value="delete"  />
+</form>
+<script type="text/javascript">
+function validate()
+{
+	if(document.getElementById("text1").value=="" ){
+        alert( "please enter userID" );
+        return false;
+    }
+    else{
+    	return true;
+    }
+   
+}
+</script>
+
+</body>
+</html>

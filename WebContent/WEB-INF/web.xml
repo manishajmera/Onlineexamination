@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>PROJECT</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description>checking for username and password which are submitted by client</description>
+    <display-name>UserServlet</display-name>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>com.p1.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/UserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Student Updation done by admin</description>
+    <display-name>StudentUpdationServlet</display-name>
+    <servlet-name>StudentUpdationServlet</servlet-name>
+    <servlet-class>com.p1.StudentUpdationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>StudentUpdationServlet</servlet-name>
+    <url-pattern>/StudentUpdationServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Used to show different databases</description>
+    <display-name>DatabaseShowServlet</display-name>
+    <servlet-name>DatabaseShowServlet</servlet-name>
+    <servlet-class>com.p1.DatabaseShowServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DatabaseShowServlet</servlet-name>
+    <url-pattern>/DatabaseShowServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>QuestionBankUpdationServlet</display-name>
+    <servlet-name>QuestionBankUpdationServlet</servlet-name>
+    <servlet-class>com.p1.QuestionBankUpdationServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>QuestionBankUpdationServlet</servlet-name>
+    <url-pattern>/QuestionBankUpdationServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

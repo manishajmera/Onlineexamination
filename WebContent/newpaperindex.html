@@ -1,0 +1,45 @@
+
+<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>new question paper</title>
+<style type= "text/css">
+		label{ width:180px;display:inline-block; text-align:right;
+			text-align:top ;color:green}
+</style>
+</head>
+<body>
+<form action="./QuestionBankUpdationServlet" method="post" onsubmit="return validate();">
+<label for = "TestID">TestID: 
+	</label><input type = "text" name="TestID" id="text1" placeholder="enter new TestID" >
+	<label for = "name">NAME: 
+	</label><input type = "text"  name="name" id="text2" placeholder="enter test name">
+	<br><br>
+	<label for="register"></label>
+   <input type="submit" value="register"  />
+</form>
+<script type="text/javascript">
+function validate()
+{
+	if(document.getElementById("text1").value=="" ){
+        alert( "please enter TestID" );
+        return false;
+    }
+    else if ( document.getElementById("text2").value=="") {
+    	alert( "please enter name" );
+        return false;
+	}
+    else if(isNaN(document.getElementById("text1").value)){
+		alert("only digits are allowed in TestID");
+		return false;
+	}
+    else{
+    	return true;
+    }
+   
+}
+</script>
+
+</body>
+</html>

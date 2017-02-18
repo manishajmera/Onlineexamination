@@ -1,0 +1,51 @@
+
+<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>ONLINE EXAMINATION</title>
+<style type= "text/css">
+		label{ width:180px;display:inline-block; text-align:right;
+			text-align:top ;color:green}
+</style>
+</head>	
+    <BODY bottomMargin=0 aLink=#f0f0f0 leftMargin=90 rightMargin=90 link=#f0f0f0  topMargin=5 bgColor=#98afc7 vLink=#f0f0f0 > 
+        <H1><marquee width="100%"  behavior="alternate" bgcolor="yellow">OnlineExamsPortal,Please LOGIN</marquee></H1>  
+<form action="./UserServlet" method="post" onsubmit="return validate();">
+<label for = "username">USERID: 
+	</label><input type = "text" name="userID" id="text1"  placeholder="enter your userID">
+	<label for = "password">PASSWORD: 
+	</label><input type = "password"  name="password" id="text2" placeholder="enter your password">
+	<br><br>
+	<label for="login"></label>
+   <input type="submit" value="submit"  />
+   <br><br><br>
+    <font size=4 face=arial><i>This portal provides a facility to the admin to host an online test. 
+    The online test can be customized according to the requirements of the admin. 
+    An admin who intents to conduct an online test can login here.
+     <br><br> 
+     Admin can set papers,register user etc.Users can also login here.
+     </i></font>               <br><br><br><br> 
+  
+</form>
+<script type="text/javascript">
+function validate()
+{
+    if(document.getElementById("text1").value=="" ){
+        alert( "please enter userID" );
+        return false;
+    }
+    else if ( document.getElementById("text2").value=="") {
+    	alert( "please enter password" );
+        return false;
+	}
+    else{
+    	return true;
+    }
+   
+}
+</script>
+
+
+</body>
+</html>

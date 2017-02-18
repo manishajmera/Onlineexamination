@@ -1,0 +1,41 @@
+
+<!DOCTYPE html >
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Student Registration</title>
+<style type= "text/css">
+		label{ width:180px;display:inline-block; text-align:right;
+			text-align:top ;color:green}
+</style>
+</head>
+<body>
+<form action="./StudentUpdationServlet" method="post" onsubmit="return validate();">
+<label for = "student">STUDENTID: 
+	</label><input type = "text" name="StudentID" id="text1" placeholder="enter student ID" >
+	<label for = "password">PASSWORD: 
+	</label><input type = "password"  name="password" id="text2" placeholder="create student password">
+	<br><br>
+	<label for="register"></label>
+   <input type="submit" value="register"  />
+</form>
+<script type="text/javascript">
+function validate()
+{
+	if(document.getElementById("text1").value=="" ){
+        alert( "please enter userID" );
+        return false;
+    }
+    else if ( document.getElementById("text2").value=="") {
+    	alert( "please enter password" );
+        return false;
+	}
+    else{
+    	return true;
+    }
+   
+}
+</script>
+
+</body>
+</html>
